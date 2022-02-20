@@ -19,6 +19,7 @@ export default function UserScreen() {
     }, [])
     return(
         <View style={styles.container}>
+            <Text style={styles.title}>USERS</Text>
             <FlatList
                 keyExtractor={(item) => item.id}
                 data={data}
@@ -50,4 +51,10 @@ const styles = StyleSheet.create({
         fontSize: 14,
         textTransform: 'capitalize'
     },
+    title: {
+        margin: 15,
+        fontSize: 30,
+        fontWeight: 600,
+        color: '#FF6000'
+    }
 });
